@@ -17,15 +17,15 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="f(x)在区间(-1,1)上的实根隔离算法实现author: 史西文 [TOC] 1.程序说明 实现了 Interval 区间类，可以进行区间的加，减，乘运算  实现了基本的 Poly 多项式类，可以使用函数 f.eval ( x ) 计算 f ( x ) ，可以使用函数 f.eval ( $I$ ) 计算 f ( $I$ )  实现了函数 root_isolation ( f , $I$ ,re">
+  <meta name="description" content="f(x)在区间(-1,1)上的实根隔离算法实现author: 史西文">
 <meta property="og:type" content="article">
 <meta property="og:title" content="f(x)在区间(-1,1)上的实根隔离算法实现">
 <meta property="og:url" content="http://example.com/2020/11/18/test/index.html">
 <meta property="og:site_name" content="GJJ&#39;blog">
-<meta property="og:description" content="f(x)在区间(-1,1)上的实根隔离算法实现author: 史西文 [TOC] 1.程序说明 实现了 Interval 区间类，可以进行区间的加，减，乘运算  实现了基本的 Poly 多项式类，可以使用函数 f.eval ( x ) 计算 f ( x ) ，可以使用函数 f.eval ( $I$ ) 计算 f ( $I$ )  实现了函数 root_isolation ( f , $I$ ,re">
+<meta property="og:description" content="f(x)在区间(-1,1)上的实根隔离算法实现author: 史西文">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2020/11/18/test/11.png">
 <meta property="og:image" content="http://example.com/2020/11/18/test/22.png">
@@ -33,7 +33,7 @@
 <meta property="og:image" content="http://example.com/2020/11/18/test/44.png">
 <meta property="og:image" content="http://example.com/2020/11/18/test/55.png">
 <meta property="article:published_time" content="2020-11-18T14:48:50.000Z">
-<meta property="article:modified_time" content="2020-11-18T14:53:14.459Z">
+<meta property="article:modified_time" content="2020-11-18T16:00:27.139Z">
 <meta property="article:author" content="瓜江君">
 <meta property="article:tag" content="C++">
 <meta name="twitter:card" content="summary">
@@ -125,6 +125,16 @@
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
@@ -180,10 +190,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-11-18 22:48:50 / 修改时间：22:53:14" itemprop="dateCreated datePublished" datetime="2020-11-18T22:48:50+08:00">2020-11-18</time>
+              <time title="创建时间：2020-11-18 22:48:50" itemprop="dateCreated datePublished" datetime="2020-11-18T22:48:50+08:00">2020-11-18</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-19 00:00:27" itemprop="dateModified" datetime="2020-11-19T00:00:27+08:00">2020-11-19</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -206,7 +222,9 @@
 
       
         <h2 id="f-x-在区间-1-1-上的实根隔离算法实现"><a href="#f-x-在区间-1-1-上的实根隔离算法实现" class="headerlink" title="f(x)在区间(-1,1)上的实根隔离算法实现"></a>f(x)在区间(-1,1)上的实根隔离算法实现</h2><p>author: 史西文</p>
-<p>[TOC]</p>
+<a id="more"></a>
+
+
 <h3 id="1-程序说明"><a href="#1-程序说明" class="headerlink" title="1.程序说明"></a>1.程序说明</h3><ul>
 <li><p>实现了 Interval 区间类，可以进行区间的加，减，乘运算</p>
 </li>
@@ -251,6 +269,25 @@
     
     
     
+        
+
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/images/wechat_channel.jpg">
+            <span class="icon">
+              <i class="fab fa-weixin"></i>
+            </span>
+
+            <span class="label">WeChat</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
 
       <footer class="post-footer">
           <div class="post-tags">
@@ -345,16 +382,23 @@
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
+          
         <span class="site-state-item-count">1</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
+          
         <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/guajiangjun" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;guajiangjun" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
 
 
 
@@ -434,6 +478,61 @@
 
 
   
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
