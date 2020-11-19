@@ -1,224 +1,729 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GJJ'blog - 生命不息，创作不止'</title><meta name="author" content="瓜江君"><meta name="copyright" content="瓜江君"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta property="og:type" content="website">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta property="og:type" content="website">
 <meta property="og:title" content="GJJ&#39;blog">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="GJJ&#39;blog">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/img/head.jpg">
 <meta property="article:author" content="瓜江君">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/img/head.jpg"><link rel="shortcut icon" href="/img/head.jpg"><link rel="canonical" href="http://example.com/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><script>var GLOBAL_CONFIG = { 
-  root: '/',
-  algolia: undefined,
-  localSearch: undefined,
-  translate: undefined,
-  noticeOutdate: undefined,
-  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
-  copy: {
-    success: '复制成功',
-    error: '复制错误',
-    noSupport: '浏览器不支持'
-  },
-  relativeDate: {
-    homepage: false,
-    post: false
-  },
-  runtime: '天',
-  date_suffix: {
-    just: '刚刚',
-    min: '分钟前',
-    hour: '小时前',
-    day: '天前',
-    month: '个月前'
-  },
-  copyright: {"limitCount":50,"languages":{"author":"作者: 瓜江君","link":"链接: ","source":"来源: GJJ'blog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
-  ClickShowText: undefined,
-  lightbox: 'fancybox',
-  Snackbar: undefined,
-  justifiedGallery: {
-    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
-    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
-  },
-  isPhotoFigcaption: false,
-  islazyload: false,
-  isanchor: false
-};
 
-var saveToLocal = {
-  set: function setWithExpiry(key, value, ttl) {
-    const now = new Date()
-    const expiryDay = ttl * 86400000
-    const item = {
-      value: value,
-      expiry: now.getTime() + expiryDay,
-    }
-    localStorage.setItem(key, JSON.stringify(item))
-  },
+<link rel="canonical" href="http://example.com/">
 
-  get: function getWithExpiry(key) {
-    const itemStr = localStorage.getItem(key)
 
-    if (!itemStr) {
-      return undefined
-    }
-    const item = JSON.parse(itemStr)
-    const now = new Date()
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
 
-    if (now.getTime() > item.expiry) {
-      localStorage.removeItem(key)
-      return undefined
-    }
-    return item.value
-  }
-}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
-  isPost: false,
-  isHome: true,
-  isHighlightShrink: ,
-  isToc: false,
-  postUpdate: '2020-11-19 10:41:41'
-}</script><noscript><style type="text/css">
-  #nav {
-    opacity: 1
-  }
-  .justified-gallery img {
-    opacity: 1
+  <title>GJJ'blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
   }
 
-  #recent-posts time,
-  #post-meta time {
-    display: inline !important
-  }
-</style></noscript><script>(function () {  window.activateDarkMode = function () {
-    document.documentElement.setAttribute('data-theme', 'dark')
-    if (document.querySelector('meta[name="theme-color"]') !== null) {
-      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-    }
-  }
-  window.activateLightMode = function () {
-    document.documentElement.setAttribute('data-theme', 'light')
-   if (document.querySelector('meta[name="theme-color"]') !== null) {
-      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
-    }
-  }
-  const autoChangeMode = 'false'
-  const t = saveToLocal.get('theme')
-  if (autoChangeMode === '1') {
-    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
-    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
-    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
-    if (t === undefined) {
-      if (isLightMode) activateLightMode()
-      else if (isDarkMode) activateDarkMode()
-      else if (isNotSpecified || hasNoSupport) {
-        const now = new Date()
-        const hour = now.getHours()
-        const isNight = hour <= 6 || hour >= 18
-        isNight ? activateDarkMode() : activateLightMode()
-      }
-      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
-        if (saveToLocal.get('theme') === undefined) {
-          e.matches ? activateDarkMode() : activateLightMode()
-        }
-      })
-    } else if (t === 'light') activateLightMode()
-    else activateDarkMode()
-  } else if (autoChangeMode === '2') {
-    const now = new Date()
-    const hour = now.getHours()
-    const isNight = hour <= 6 || hour >= 18
-    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
-    else if (t === 'light') activateLightMode()
-    else activateDarkMode()
-  } else {
-    if (t === 'dark') activateDarkMode()
-    else if (t === 'light') activateLightMode()
-  }const asideStatus = saveToLocal.get('aside-status')
-if (asideStatus !== undefined) {
-   if (asideStatus === 'hide') {
-     document.documentElement.classList.add('hide-aside')
-   } else {
-     document.documentElement.classList.remove('hide-aside')
-   }
-}})()</script><meta name="generator" content="Hexo 5.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div></div></div><div id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(/img/banner.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">GJJ'blog</a></span><span id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site-title">GJJ'blog</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/11/18/test/" title="f(x)在区间(-1,1)上的实根隔离算法实现">     <img class="post_bg" src="/img/banner.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="f(x)在区间(-1,1)上的实根隔离算法实现"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/18/test/" title="f(x)在区间(-1,1)上的实根隔离算法实现">f(x)在区间(-1,1)上的实根隔离算法实现</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-11-18T14:48:50.000Z" title="发表于 2020-11-18 22:48:50">2020-11-18</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/C/">C++</a></span></div><div class="content">f(x)在区间(-1,1)上的实根隔离算法实现author: 史西文
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
 
+</head>
 
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
 
-1.程序说明
-实现了 Interval 区间类，可以进行区间的加，减，乘运算
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
 
-实现了基本的 Poly 多项式类，可以使用函数 f.eval ( x ) 计算 f ( x ) ，可以使用函数 f.eval ( $I$ ) 计算 f ( $I$ )
+  <div class="site-meta">
 
-实现了函数 root_isolation ( f , $I$ ,result) ,result 是一个区间 vector ，此函数计算 f 在区间 $I$ 中的实根隔离区间，并将这些区间添加到 result 中
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">GJJ'blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">生命不息，创作不止'</p>
+  </div>
 
-delta表示我们要求 $f$ 的任意两个实根之间的距离都要大于delta (预设为1e-100)
-
-epsilon表示如果区间长度小于epsilon，就不再进行计算了(预设为1e-100)
-
-
-2.实根隔离函数注解实根隔离函数注解：（此函数在RootIsolation.hpp中，详见4.(2)）
-1234567891011121314151617181920212223242526272829303132333435363738394041424344/ ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/11/18/README/" title="无题">     <img class="post_bg" src="/img/banner.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/18/README/" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-11-18T14:40:51.469Z" title="发表于 2020-11-18 22:40:51">2020-11-18</time></span></div><div class="content">f(x)在区间(-1,1)上的实根隔离算法实现author: 史西文
-[TOC]
-1.程序说明
-实现了 Interval 区间类，可以进行区间的加，减，乘运算
-
-实现了基本的 Poly 多项式类，可以使用函数 f.eval ( x ) 计算 f ( x ) ，可以使用函数 f.eval ( $I$ ) 计算 f ( $I$ )
-
-实现了函数 root_isolation ( f , $I$ ,result) ,result 是一个区间 vector ，此函数计算 f 在区间 $I$ 中的实根隔离区间，并将这些区间添加到 result 中
-
-delta表示我们要求 $f$ 的任意两个实根之间的距离都要大于delta (预设为1e-100)
-
-epsilon表示如果区间长度小于epsilon，就不再进行计算了(预设为1e-100)
-
-
-2.实根隔离函数注解实根隔离函数注解：（此函数在RootIsolation.hpp中，详见4.(2)）
-12345678910111213141516171819202122232425262728293031323334353637383940414243 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/11/18/today-md/" title="today.md">     <img class="post_bg" src="/img/banner.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="today.md"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/18/today-md/" title="today.md">today.md</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-11-18T13:56:56.000Z" title="发表于 2020-11-18 21:56:56">2020-11-18</time></span></div><div class="content">hello math$\xi$
-$$\xi+\eta \geq \pi$$
-12345int main()&#123;	int a=0;	cout&lt;&lt;a&lt;&lt;endl;	return 0;&#125;
-
-
-sdfd
-dafa
-fadfa
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
 
 
 
 
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
 
-2
-3
-3
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
 
 
 
 
-3
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
 
 
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
 
-
-
-3
-
-
-
-
-3
-
-
-</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/11/17/hello-world/" title="Hello World">     <img class="post_bg" src="/img/banner.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/17/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-11-17T15:49:47.574Z" title="发表于 2020-11-17 23:49:47">2020-11-17</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
-
-More info: Writing
-Run server1$ hexo server
-
-More info: Server
-Generate static files1$ hexo generate
-
-More info: Generating
-Deploy to remote sites1$ hexo deploy
-
-More info: Deployment
-</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/head.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">瓜江君</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2020/11/18/test/" title="f(x)在区间(-1,1)上的实根隔离算法实现"><img src="/img/banner.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="f(x)在区间(-1,1)上的实根隔离算法实现"/></a><div class="content"><a class="title" href="/2020/11/18/test/" title="f(x)在区间(-1,1)上的实根隔离算法实现">f(x)在区间(-1,1)上的实根隔离算法实现</a><time datetime="2020-11-18T14:48:50.000Z" title="发表于 2020-11-18 22:48:50">2020-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/11/18/README/" title="无题"><img src="/img/banner.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2020/11/18/README/" title="无题">无题</a><time datetime="2020-11-18T14:40:51.469Z" title="发表于 2020-11-18 22:40:51">2020-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/11/18/today-md/" title="today.md"><img src="/img/banner.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="today.md"/></a><div class="content"><a class="title" href="/2020/11/18/today-md/" title="today.md">today.md</a><time datetime="2020-11-18T13:56:56.000Z" title="发表于 2020-11-18 21:56:56">2020-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/11/17/hello-world/" title="Hello World"><img src="/img/banner.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2020/11/17/hello-world/" title="Hello World">Hello World</a><time datetime="2020-11-17T15:49:47.574Z" title="发表于 2020-11-17 23:49:47">2020-11-17</time></div></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list" id="aside-cat-list">
-            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C/"><span class="card-category-list-name">C++</span><span class="card-category-list-count">1</span></a></li>
+          <div class="content index posts-expand">
             
-            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/C/" style="font-size: 1.1em; color: #999">C++</a> <a href="/tags/math/" style="font-size: 1.1em; color: #999">math</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/11/"><span class="card-archive-list-date">十一月 2020</span><span class="card-archive-list-count">4</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">4</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2020-11-18T00:00:00.000Z"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2020-11-19T02:41:41.364Z"></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 By 瓜江君</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><div class="js-pjax"></div></div></body></html>
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/11/18/test/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="瓜江君">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GJJ'blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/11/18/test/" class="post-title-link" itemprop="url">f(x)在区间(-1,1)上的实根隔离算法实现</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-11-18 22:48:50" itemprop="dateCreated datePublished" datetime="2020-11-18T22:48:50+08:00">2020-11-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-19 00:00:27" itemprop="dateModified" datetime="2020-11-19T00:00:27+08:00">2020-11-19</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C/" itemprop="url" rel="index"><span itemprop="name">C++</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="f-x-在区间-1-1-上的实根隔离算法实现"><a href="#f-x-在区间-1-1-上的实根隔离算法实现" class="headerlink" title="f(x)在区间(-1,1)上的实根隔离算法实现"></a>f(x)在区间(-1,1)上的实根隔离算法实现</h2><p>author: 史西文</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/11/18/test/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/11/18/README/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="瓜江君">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GJJ'blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/11/18/README/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-11-18 22:40:51" itemprop="dateCreated datePublished" datetime="2020-11-18T22:40:51+08:00">2020-11-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-09 12:19:36" itemprop="dateModified" datetime="2020-11-09T12:19:36+08:00">2020-11-09</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="f-x-在区间-1-1-上的实根隔离算法实现"><a href="#f-x-在区间-1-1-上的实根隔离算法实现" class="headerlink" title="f(x)在区间(-1,1)上的实根隔离算法实现"></a>f(x)在区间(-1,1)上的实根隔离算法实现</h2><p>author: 史西文</p>
+<p>[TOC]</p>
+<h3 id="1-程序说明"><a href="#1-程序说明" class="headerlink" title="1.程序说明"></a>1.程序说明</h3><ul>
+<li><p>实现了 Interval 区间类，可以进行区间的加，减，乘运算</p>
+</li>
+<li><p>实现了基本的 Poly 多项式类，可以使用函数 f.eval ( x ) 计算 f ( x ) ，可以使用函数 f.eval ( $I$ ) 计算 f ( $I$ )</p>
+</li>
+<li><p>实现了函数 root_isolation ( f , $I$ ,result) ,result 是一个区间 vector ，此函数计算 f 在区间 $I$ 中的实根隔离区间，并将这些区间添加到 result 中</p>
+</li>
+<li><p>delta表示我们要求 $f$ 的任意两个实根之间的距离都要大于delta (预设为1e-100)</p>
+</li>
+<li><p>epsilon表示如果区间长度小于epsilon，就不再进行计算了(预设为1e-100)</p>
+</li>
+</ul>
+<h3 id="2-实根隔离函数注解"><a href="#2-实根隔离函数注解" class="headerlink" title="2.实根隔离函数注解"></a>2.实根隔离函数注解</h3><p>实根隔离函数注解：（此函数在RootIsolation.hpp中，详见4.(2)）</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//计算 f 在区间 I 中的实根隔离区间，并将这些区间添加到vector&lt;Interval&gt; result中</span></span><br><span class="line"><span class="comment">//delta表示我们要求f的任意两个实根之间的距离都要大于delta</span></span><br><span class="line"><span class="comment">//epsilon表示如果区间长度小于epsilon，就不再进行计算了</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">root_isolation</span><span class="params">(<span class="keyword">const</span> Poly&lt;<span class="keyword">double</span>&gt; &amp;f, Interval I, <span class="built_in">vector</span>&lt;Interval&gt; &amp;result, <span class="keyword">double</span> delta = <span class="number">1e-100</span>, <span class="keyword">double</span> epsilon = <span class="number">1e-100</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//表示如果区间长度小于epsilon，就不再进行计算了</span></span><br><span class="line">    <span class="keyword">if</span> (I.getLength() &lt; epsilon)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//如果0不在f(I)中，则f在I中一定没有实根，故对于区间I不做任何处理</span></span><br><span class="line">    <span class="keyword">if</span> (if_0_In_(f, I) == <span class="literal">false</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//如果0在f(I)中，则f在I中可能有实根</span></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">double</span> a = I(<span class="number">0</span>), b = I(<span class="number">1</span>);</span><br><span class="line">        <span class="keyword">if</span> (f.eval(a) == <span class="number">0</span>)   <span class="comment">//如果f(a)==0,则a是一个实根，在result中添加区间(a,a)，并令a+=delta</span></span><br><span class="line">        &#123;</span><br><span class="line">            result.push_back(Interval(a, a));</span><br><span class="line">            a += delta;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (f.eval(b) == <span class="number">0</span>)   <span class="comment">//如果f(b)==0,则b是一个实根，在result中添加区间(b,b)，并令b-=delta</span></span><br><span class="line">        &#123;</span><br><span class="line">            result.push_back(Interval(b, b));</span><br><span class="line">            b -= delta;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> ((f.eval(a) * f.eval(b) &lt; <span class="number">0</span>) &amp;&amp; (if_0_In_(f.diff(), Interval(a, b)) == <span class="literal">false</span>))</span><br><span class="line">        &#123;</span><br><span class="line">   <span class="comment">//如果f(a)f(b)&lt;0且0不在区间f&#x27;(I)中，则f在区间(a,b)中有唯一的实根，在result中添加区间(a,b)</span></span><br><span class="line">            result.push_back(Interval(a, b));</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">   <span class="comment">//否则的话，对区间(a,b)进行二分，并计算 f 在两个二分区间中的实根隔离区间，并将这些区间添加到result中</span></span><br><span class="line">            root_isolation(f, Interval(a, (a + b) / <span class="number">2</span>), result);</span><br><span class="line">            root_isolation(f, Interval((a + b) / <span class="number">2</span>, b), result);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-计算结果"><a href="#3-计算结果" class="headerlink" title="3.计算结果"></a>3.计算结果</h3><p>注：以下几个实根隔离的例子程序运行时间都在 $10^{-4}$ ~ $10^{-5}s$ 左右。</p>
+<h5 id="1-f-x-x-0-01"><a href="#1-f-x-x-0-01" class="headerlink" title="(1) $f(x)=x-0.01$"></a>(1) $f(x)=x-0.01$</h5><img src="/2020/11/18/README/2020-11-09 12-04-05 的屏幕截图.png" style="zoom:50%;">
+
+<h5 id="2-f-x-x-0-1-x-0-2-x-0-3-x-3-0-6x-2-0-11x-0-006"><a href="#2-f-x-x-0-1-x-0-2-x-0-3-x-3-0-6x-2-0-11x-0-006" class="headerlink" title="(2) $f(x)=(x-0.1)(x-0.2)(x-0.3)=x^3 - 0.6x^2 + 0.11x - 0.006$"></a>(2) $f(x)=(x-0.1)(x-0.2)(x-0.3)=x^3 - 0.6x^2 + 0.11x - 0.006$</h5><img src="/2020/11/18/README/2020-11-09 12-00-57 的屏幕截图.png" style="zoom:50%;">
+
+<h5 id="3-f-x-x-0-01-x-0-02-x-0-03-x-3-0-06x-2-0-0011x-6-10-6"><a href="#3-f-x-x-0-01-x-0-02-x-0-03-x-3-0-06x-2-0-0011x-6-10-6" class="headerlink" title="(3) $f(x)=(x-0.01)(x-0.02)(x-0.03)=                                                                                                  x^3 - 0.06x^2 + 0.0011x - 6*10^{-6}$"></a>(3) $f(x)=(x-0.01)(x-0.02)(x-0.03)=                                                                                                  x^3 - 0.06x^2 + 0.0011x - 6*10^{-6}$</h5><img src="/2020/11/18/README/2020-11-09 12-11-27 的屏幕截图.png" style="zoom:50%;">
+
+<h5 id="4-f-x-x-x-3-x-0-9-x-0-99-x-0-000001"><a href="#4-f-x-x-x-3-x-0-9-x-0-99-x-0-000001" class="headerlink" title="(4) $f(x)=x(x-3)(x-0.9)(x+0.99)(x-0.000001)   $"></a>(4) $f(x)=x(x-3)(x-0.9)(x+0.99)(x-0.000001)   $</h5><p>$展开为 f(x)=x^5 - 2.910001x^4 - 1.16099709x^3 + 2.673001161x^2 - (2.673*10^{-6})*x$</p>
+<img src="/2020/11/18/README/2020-11-09 12-09-25 的屏幕截图.png" style="zoom:50%;">
+
+<h5 id="5-f-x-0-1-x-0-01-x-0-001-x-0-0001"><a href="#5-f-x-0-1-x-0-01-x-0-001-x-0-0001" class="headerlink" title="(5) $ f=(x-0.1)(x-0.01)(x-0.001)(x-0.0001)  $"></a>(5) $ f=(x-0.1)(x-0.01)(x-0.001)(x-0.0001)  $</h5><p>$f 展开为：x^4 - 0.1111x^3 + 0.0011211x^2 - (1.111<em>10^{-6})x + 1</em>10^{-10}$</p>
+<p>![](README.assets/2020-11-09 12-05-45 的屏幕截图.png)</p>
+<h3 id="4-源代码"><a href="#4-源代码" class="headerlink" title="4.源代码"></a>4.源代码</h3><h5 id="1-main-cpp-（主函数）"><a href="#1-main-cpp-（主函数）" class="headerlink" title="(1)  main.cpp （主函数）"></a>(1)  main.cpp （主函数）</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;include.hpp&quot;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//实验(1)</span></span><br><span class="line">    <span class="comment">//Poly&lt;double&gt; f(vector&lt;double&gt;&#123;-0.01, 1&#125;);</span></span><br><span class="line">    <span class="comment">//实验(2)</span></span><br><span class="line">    <span class="comment">//Poly&lt;double&gt; f(vector&lt;double&gt;&#123;-0.006, 0.11, -0.6, 1&#125;); //表示f(x)= -0.006+ 0.11x - 0.6x^2 + x^3</span></span><br><span class="line">    <span class="comment">//实验(3)x^3 - 0.06x^2 + 0.0011x - 6*10^&#123;-6&#125;</span></span><br><span class="line">    <span class="function">Poly&lt;<span class="keyword">double</span>&gt; <span class="title">f</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">double</span>&gt;&#123;<span class="number">-6e-6</span>, <span class="number">0.0011</span>, <span class="number">-0.06</span>, <span class="number">1</span>&#125;)</span></span>;</span><br><span class="line">    <span class="comment">//实验(4)</span></span><br><span class="line">    <span class="comment">//Poly&lt;double&gt; f(vector&lt;double&gt;&#123;0,-2.673e-6, 2.673001161,-1.16099709,-2.910001, 1&#125;);</span></span><br><span class="line">    <span class="comment">//实验(5)</span></span><br><span class="line">    <span class="comment">//Poly&lt;double&gt; f(vector&lt;double&gt;&#123;1e-10, -1.111e-6, 0.0011211, -0.1111, 1&#125;);</span></span><br><span class="line">    <span class="built_in">vector</span>&lt;Interval&gt; result;</span><br><span class="line">    <span class="keyword">clock_t</span> startTime, endTime;</span><br><span class="line">    startTime = clock(); <span class="comment">//计时开始</span></span><br><span class="line">    root_isolation(f, Interval(<span class="number">-1</span>, <span class="number">1</span>), result);</span><br><span class="line">    endTime = clock(); <span class="comment">//计时结束</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;f(x)=&quot;</span> &lt;&lt; f &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;f(x)在区间(-1,1)中的实根隔离区间为：&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; result &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;The run time is: &quot;</span> &lt;&lt; (<span class="keyword">double</span>)(endTime - startTime) / CLOCKS_PER_SEC &lt;&lt; <span class="string">&quot;s&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-RootIsolation-hpp（实根隔离函数实现）"><a href="#2-RootIsolation-hpp（实根隔离函数实现）" class="headerlink" title="(2) RootIsolation.hpp（实根隔离函数实现）"></a>(2) RootIsolation.hpp（实根隔离函数实现）</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> once</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;Interval.hpp&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;Poly.hpp&quot;</span></span></span><br><span class="line"><span class="comment">//判断0是否在f(I)中</span></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">if_0_In_</span><span class="params">(<span class="keyword">const</span> Poly&lt;<span class="keyword">double</span>&gt; &amp;f, <span class="keyword">const</span> Interval &amp;I)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> ifIn(<span class="number">0</span>, f.eval(I));</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//计算f在区间I中的实根隔离区间，并将这些区间添加到vector&lt;Interval&gt; result中</span></span><br><span class="line"><span class="comment">//delta表示两个实根之间的距离大于delta，epsilon表示如果区间长度小于epsilon，就不再进行计算了</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">root_isolation</span><span class="params">(<span class="keyword">const</span> Poly&lt;<span class="keyword">double</span>&gt; &amp;f, Interval I, <span class="built_in">vector</span>&lt;Interval&gt; &amp;result, <span class="keyword">double</span> delta = <span class="number">1e-100</span>, <span class="keyword">double</span> epsilon = <span class="number">1e-100</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//表示如果区间长度小于epsilon，就不再进行计算了</span></span><br><span class="line">    <span class="keyword">if</span> (I.getLength() &lt; epsilon)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//如果0不在f(I)中，则f在I中一定没有实根，故对于区间I不做任何处理</span></span><br><span class="line">    <span class="keyword">if</span> (if_0_In_(f, I) == <span class="literal">false</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//如果0在f(I)中，则f在I中可能有实根</span></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">double</span> a = I(<span class="number">0</span>), b = I(<span class="number">1</span>);</span><br><span class="line">        <span class="keyword">if</span> (f.eval(a) == <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            result.push_back(Interval(a, a));</span><br><span class="line">            a += delta;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (f.eval(b) == <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            result.push_back(Interval(b, b));</span><br><span class="line">            b -= delta;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> ((f.eval(a) * f.eval(b) &lt; <span class="number">0</span>) &amp;&amp; (if_0_In_(f.diff(), Interval(a, b)) == <span class="literal">false</span>))</span><br><span class="line">        &#123;</span><br><span class="line">            result.push_back(Interval(a, b));</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            root_isolation(f, Interval(a, (a + b) / <span class="number">2</span>), result);</span><br><span class="line">            root_isolation(f, Interval((a + b) / <span class="number">2</span>, b), result);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-Interval-hpp（区间类）"><a href="#3-Interval-hpp（区间类）" class="headerlink" title="(3) Interval.hpp（区间类）"></a>(3) Interval.hpp（区间类）</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> once</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="comment">//double valued open interval</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Interval</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="keyword">double</span> a, b;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> region 构造函数和输出函数</span></span><br><span class="line">    <span class="comment">//构造函数</span></span><br><span class="line">    Interval(<span class="keyword">double</span> m_a = <span class="number">0</span>, <span class="keyword">double</span> m_b = <span class="number">0</span>) : a(m_a), b(m_b)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (a &gt; b)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">throw</span> invalid_argument(<span class="string">&quot;Interval() Wong:a must be less than b!&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//输出函数</span></span><br><span class="line">    <span class="keyword">friend</span> ostream &amp;<span class="keyword">operator</span>&lt;&lt;(ostream &amp;out, <span class="keyword">const</span> Interval &amp;I)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> out &lt;&lt; <span class="string">&quot;(&quot;</span> &lt;&lt; I.a &lt;&lt; <span class="string">&quot; , &quot;</span> &lt;&lt; I.b &lt;&lt; <span class="string">&quot;)&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> endregion</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> region 区间基本处理</span></span><br><span class="line">    <span class="comment">//判断一个数是否所在区间之中</span></span><br><span class="line">    <span class="function"><span class="keyword">friend</span> <span class="keyword">bool</span> <span class="title">ifIn</span><span class="params">(<span class="keyword">double</span> d, <span class="keyword">const</span> Interval &amp;I)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> I.a &lt; d &amp;&amp; d &lt; I.b;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//返回区间的长度</span></span><br><span class="line">    <span class="function"><span class="keyword">double</span> <span class="title">getLength</span><span class="params">()</span> <span class="keyword">const</span> </span>&#123; <span class="keyword">return</span> b - a; &#125;</span><br><span class="line">    <span class="comment">//返回区间的左端点和右端点（可以修改）</span></span><br><span class="line">    <span class="keyword">double</span> &amp;<span class="keyword">operator</span>[](<span class="keyword">int</span> i)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (i == <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> a;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> b;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//返回区间的左端点和右端点（不可以修改）</span></span><br><span class="line">    <span class="function"><span class="keyword">double</span> <span class="title">operator</span><span class="params">()</span><span class="params">(<span class="keyword">int</span> i)</span> <span class="keyword">const</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (i == <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> a;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> b;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> endregion</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> region 区间算术</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> region +=</span></span><br><span class="line">    <span class="comment">//加等一个区间</span></span><br><span class="line">    Interval &amp;<span class="keyword">operator</span>+=(<span class="keyword">const</span> Interval &amp;I)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">double</span> n1 = a + I.a;</span><br><span class="line">        <span class="keyword">double</span> n2 = a + I.b;</span><br><span class="line">        <span class="keyword">double</span> n3 = b + I.a;</span><br><span class="line">        <span class="keyword">double</span> n4 = b + I.b;</span><br><span class="line">        a = min(n1, min(n2, min(n3, n4)));</span><br><span class="line">        b = max(n1, max(n2, max(n3, n4)));</span><br><span class="line">        <span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//加等一个常数</span></span><br><span class="line">    Interval &amp;<span class="keyword">operator</span>+=(<span class="keyword">const</span> <span class="keyword">double</span> rhs)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">double</span> n1 = a + rhs;</span><br><span class="line">        <span class="keyword">double</span> n2 = b + rhs;</span><br><span class="line">        a = min(n1, n2);</span><br><span class="line">        b = max(n1, n2);</span><br><span class="line">        <span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> endregion</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> region -=</span></span><br><span class="line">    <span class="comment">//减等一个区间</span></span><br><span class="line">    Interval &amp;<span class="keyword">operator</span>-=(<span class="keyword">const</span> Interval &amp;I)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">double</span> n1 = a - I.a;</span><br><span class="line">        <span class="keyword">double</span> n2 = a - I.b;</span><br><span class="line">        <span class="keyword">double</span> n3 = b - I.a;</span><br><span class="line">        <span class="keyword">double</span> n4 = b - I.b;</span><br><span class="line">        a = min(n1, min(n2, min(n3, n4)));</span><br><span class="line">        b = max(n1, max(n2, max(n3, n4)));</span><br><span class="line">        <span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//减等一个常数</span></span><br><span class="line">    Interval &amp;<span class="keyword">operator</span>-=(<span class="keyword">const</span> <span class="keyword">double</span> rhs)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">double</span> n1 = a - rhs;</span><br><span class="line">        <span class="keyword">double</span> n2 = b - rhs;</span><br><span class="line">        a = min(n1, n2);</span><br><span class="line">        b = max(n1, n2);</span><br><span class="line">        <span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> endregion</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> region *=</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//乘等一个区间</span></span><br><span class="line">    Interval &amp;<span class="keyword">operator</span>*=(<span class="keyword">const</span> Interval &amp;I)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">double</span> n1 = a * I.a;</span><br><span class="line">        <span class="keyword">double</span> n2 = a * I.b;</span><br><span class="line">        <span class="keyword">double</span> n3 = b * I.a;</span><br><span class="line">        <span class="keyword">double</span> n4 = b * I.b;</span><br><span class="line">        a = min(n1, min(n2, min(n3, n4)));</span><br><span class="line">        b = max(n1, max(n2, max(n3, n4)));</span><br><span class="line">        <span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//乘等一个常数</span></span><br><span class="line">    Interval &amp;<span class="keyword">operator</span>*=(<span class="keyword">const</span> <span class="keyword">double</span> rhs)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">double</span> n1 = a * rhs;</span><br><span class="line">        <span class="keyword">double</span> n2 = b * rhs;</span><br><span class="line">        a = min(n1, n2);</span><br><span class="line">        b = max(n1, n2);</span><br><span class="line">        <span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> endregion</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> endregion</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> region 区间取正和负</span></span><br><span class="line">Interval <span class="keyword">operator</span>+(<span class="keyword">const</span> Interval &amp;I)</span><br><span class="line">&#123;</span><br><span class="line">    Interval re = I;</span><br><span class="line">    <span class="keyword">return</span> re;</span><br><span class="line">&#125;</span><br><span class="line">Interval <span class="keyword">operator</span>-(<span class="keyword">const</span> Interval &amp;I)</span><br><span class="line">&#123;</span><br><span class="line">    Interval re;</span><br><span class="line">    re[<span class="number">0</span>] = -I(<span class="number">1</span>);</span><br><span class="line">    re[<span class="number">1</span>] = -I(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> re;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> endregion</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> region 区间算术</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> region +</span></span><br><span class="line"><span class="comment">//两个区间相加</span></span><br><span class="line">Interval <span class="keyword">operator</span>+(<span class="keyword">const</span> Interval &amp;I, <span class="keyword">const</span> Interval &amp;J)</span><br><span class="line">&#123;</span><br><span class="line">    Interval re = I;</span><br><span class="line">    re += J;</span><br><span class="line">    <span class="keyword">return</span> re;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//一个区间和一个常数相加</span></span><br><span class="line">Interval <span class="keyword">operator</span>+(<span class="keyword">const</span> Interval &amp;I, <span class="keyword">double</span> a)</span><br><span class="line">&#123;</span><br><span class="line">    Interval re = I;</span><br><span class="line">    re += a;</span><br><span class="line">    <span class="keyword">return</span> re;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//一个常数和一个区间相加</span></span><br><span class="line">Interval <span class="keyword">operator</span>+(<span class="keyword">double</span> a, <span class="keyword">const</span> Interval &amp;J)</span><br><span class="line">&#123;</span><br><span class="line">    Interval re = J;</span><br><span class="line">    re += a;</span><br><span class="line">    <span class="keyword">return</span> re;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> endregion</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> region -</span></span><br><span class="line"><span class="comment">//两个区间相减</span></span><br><span class="line">Interval <span class="keyword">operator</span>-(<span class="keyword">const</span> Interval &amp;I, <span class="keyword">const</span> Interval &amp;J)</span><br><span class="line">&#123;</span><br><span class="line">    Interval re = I;</span><br><span class="line">    re -= J;</span><br><span class="line">    <span class="keyword">return</span> re;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//一个区间减去一个常数</span></span><br><span class="line">Interval <span class="keyword">operator</span>-(<span class="keyword">const</span> Interval &amp;I, <span class="keyword">double</span> a)</span><br><span class="line">&#123;</span><br><span class="line">    Interval re = I;</span><br><span class="line">    re -= a;</span><br><span class="line">    <span class="keyword">return</span> re;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//一个常数减去一个区间</span></span><br><span class="line">Interval <span class="keyword">operator</span>-(<span class="keyword">double</span> a, <span class="keyword">const</span> Interval &amp;J)</span><br><span class="line">&#123;</span><br><span class="line">    Interval re = -J;</span><br><span class="line">    re += a;</span><br><span class="line">    <span class="keyword">return</span> re;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> endregion</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> region *</span></span><br><span class="line"><span class="comment">//两个区间相乘</span></span><br><span class="line">Interval <span class="keyword">operator</span>*(<span class="keyword">const</span> Interval &amp;I, <span class="keyword">const</span> Interval &amp;J)</span><br><span class="line">&#123;</span><br><span class="line">    Interval re = I;</span><br><span class="line">    re *= J;</span><br><span class="line">    <span class="keyword">return</span> re;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//一个区间乘上一个常数</span></span><br><span class="line">Interval <span class="keyword">operator</span>*(<span class="keyword">const</span> Interval &amp;I, <span class="keyword">double</span> a)</span><br><span class="line">&#123;</span><br><span class="line">    Interval re = I;</span><br><span class="line">    re *= a;</span><br><span class="line">    <span class="keyword">return</span> re;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//一个常数乘上一个区间</span></span><br><span class="line">Interval <span class="keyword">operator</span>*(<span class="keyword">double</span> a, <span class="keyword">const</span> Interval &amp;J)</span><br><span class="line">&#123;</span><br><span class="line">    Interval re = J;</span><br><span class="line">    re *= a;</span><br><span class="line">    <span class="keyword">return</span> re;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> endregion</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> endregion</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> region 区间相等判断</span></span><br><span class="line"><span class="keyword">bool</span> <span class="keyword">operator</span>==(<span class="keyword">const</span> Interval &amp;I, <span class="keyword">const</span> Interval &amp;J)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">return</span> I(<span class="number">0</span>) == J(<span class="number">0</span>) &amp;&amp; I(<span class="number">1</span>) == J(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">bool</span> <span class="keyword">operator</span>!=(<span class="keyword">const</span> Interval &amp;I, <span class="keyword">const</span> Interval &amp;J)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">return</span> ~(I == J);</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> endregion</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="4-Poly-hpp（多项式类）"><a href="#4-Poly-hpp（多项式类）" class="headerlink" title="(4) Poly.hpp（多项式类）"></a>(4) Poly.hpp（多项式类）</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> once</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;includeSTL.hpp&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;Interval.hpp&quot;</span></span></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="comment">//T表示多项式的系数的数据类型</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Poly</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="built_in">vector</span>&lt;T&gt; poly;</span><br><span class="line">    <span class="keyword">int</span> degree;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">//构造函数（用一个vector初始化进行构造） test ok!</span></span><br><span class="line">    Poly(<span class="keyword">const</span> <span class="built_in">vector</span>&lt;T&gt; &amp;m_poly = <span class="built_in">vector</span>&lt;T&gt;(<span class="number">1</span>))</span><br><span class="line">    &#123;</span><br><span class="line">        poly = m_poly;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = poly.size() - <span class="number">1</span>; i &gt;= <span class="number">1</span>; i--)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (poly[i] == <span class="number">0</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                poly.pop_back();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        degree = poly.size() - <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> region 返回i次项的系数（[] 可以修改和() 不可以修改），返回多项式的次数[test ok !]</span></span><br><span class="line">    <span class="comment">//返回x^i的系数（可以修改）</span></span><br><span class="line">    T &amp;<span class="keyword">operator</span>[](<span class="keyword">int</span> i)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> poly[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//返回x^i的系数（不可以修改）</span></span><br><span class="line">    <span class="function">T <span class="title">operator</span><span class="params">()</span><span class="params">(<span class="keyword">int</span> i)</span> <span class="keyword">const</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> poly[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//返回多项式的次数</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">getDegree</span><span class="params">()</span> <span class="keyword">const</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> degree;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> endregion</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> region 多项式加等test ok !，减等test ok !，乘等todo</span></span><br><span class="line">    <span class="comment">//多项式加等 test ok!</span></span><br><span class="line">    Poly&lt;T&gt; &amp;<span class="keyword">operator</span>+=(<span class="keyword">const</span> Poly &amp;f)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (degree &gt;= f.getDegree()) <span class="comment">//degree &gt;= degree(f)</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= f.getDegree(); i++)</span><br><span class="line">                poly[i] += f(i);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="comment">//degree &lt; degree(f)</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= degree; i++)</span><br><span class="line">                poly[i] += f(i);</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = degree + <span class="number">1</span>; i &lt;= f.getDegree(); i++)</span><br><span class="line">                poly.push_back(f(i));</span><br><span class="line">        &#125;</span><br><span class="line">        degree = poly.size() - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//多项式减等 test ok!</span></span><br><span class="line">    Poly&lt;T&gt; &amp;<span class="keyword">operator</span>-=(<span class="keyword">const</span> Poly &amp;f)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (degree &gt;= f.getDegree())</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= f.getDegree(); i++)</span><br><span class="line">                poly[i] -= f(i);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="comment">//degree &lt; degree(f)</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= degree; i++)</span><br><span class="line">                poly[i] -= f(i);</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = degree + <span class="number">1</span>; i &lt;= f.getDegree(); i++)</span><br><span class="line">                poly.push_back(-f(i));</span><br><span class="line">        &#125;</span><br><span class="line">        degree = poly.size() - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> endregion</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> region 计算f(x) test ok !, 计算f(I)</span></span><br><span class="line">    <span class="comment">//计算f(x) test ok!</span></span><br><span class="line">    <span class="function">T <span class="title">eval</span><span class="params">(T x)</span> <span class="keyword">const</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        T re = poly[degree];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = degree; i &gt;= <span class="number">1</span>; i--)</span><br><span class="line">        &#123;</span><br><span class="line">            re *= x;</span><br><span class="line">            re += poly[i - <span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> re;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function">Interval <span class="title">eval</span><span class="params">(<span class="keyword">const</span> Interval &amp;I)</span> <span class="keyword">const</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="function">Interval <span class="title">re</span><span class="params">(poly[degree], poly[degree])</span></span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = degree; i &gt;= <span class="number">1</span>; i--)</span><br><span class="line">        &#123;</span><br><span class="line">            re *= I;</span><br><span class="line">            re += poly[i - <span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> re;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> endregion</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> region 计算f的导数 test ok !</span></span><br><span class="line">    <span class="comment">// 计算f的导数 test ok!</span></span><br><span class="line">    <span class="function">Poly&lt;T&gt; <span class="title">diff</span><span class="params">()</span> <span class="keyword">const</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (poly.size() &lt;= <span class="number">1</span>)</span><br><span class="line">            <span class="keyword">return</span> Poly();</span><br><span class="line">        <span class="built_in">vector</span>&lt;T&gt; a;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; degree; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            a.push_back((i + <span class="number">1</span>) * poly[i + <span class="number">1</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> Poly&lt;T&gt;(a);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> endregion</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//输出多项式 test ok!</span></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line">ostream &amp;<span class="keyword">operator</span>&lt;&lt;(ostream &amp;out, <span class="keyword">const</span> Poly&lt;T&gt; f)</span><br><span class="line">&#123;</span><br><span class="line">    out &lt;&lt; f(<span class="number">0</span>);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= f.getDegree(); i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (f(i) == <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (f(i) &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            out &lt;&lt; <span class="string">&quot;+&quot;</span> &lt;&lt; f(i) &lt;&lt; <span class="string">&quot;x^&#123;&quot;</span> &lt;&lt; i &lt;&lt; <span class="string">&quot;&#125;&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            out &lt;&lt; <span class="string">&quot;-&quot;</span> &lt;&lt; (-f(i)) &lt;&lt; <span class="string">&quot;x^&#123;&quot;</span> &lt;&lt; i &lt;&lt; <span class="string">&quot;&#125;&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> out;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="5-includeSTL-hpp"><a href="#5-includeSTL-hpp" class="headerlink" title="(5) includeSTL.hpp"></a>(5) includeSTL.hpp</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> once</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;ctime&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line">ostream &amp;<span class="keyword">operator</span>&lt;&lt;(ostream &amp;out, <span class="keyword">const</span> <span class="built_in">vector</span>&lt;T&gt; &amp;a)</span><br><span class="line">&#123;</span><br><span class="line">    out &lt;&lt; <span class="string">&quot;[&quot;</span> &lt;&lt; a[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; a.size(); i++)</span><br><span class="line">    &#123;</span><br><span class="line">        out &lt;&lt; <span class="string">&quot;,&quot;</span> &lt;&lt; a[i];</span><br><span class="line">    &#125;</span><br><span class="line">    out &lt;&lt; <span class="string">&quot;]&quot;</span>;</span><br><span class="line">    <span class="keyword">return</span> out;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">myabs</span><span class="params">(<span class="keyword">double</span> a)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (a &gt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> a;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> -a;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">min</span><span class="params">(<span class="keyword">double</span> a, <span class="keyword">double</span> b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a &gt; b ? b : a;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">max</span><span class="params">(<span class="keyword">double</span> a, <span class="keyword">double</span> b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a &gt; b ? a : b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>– END –</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/11/18/today-md/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="瓜江君">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GJJ'blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/11/18/today-md/" class="post-title-link" itemprop="url">today.md</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-11-18 21:56:56 / 修改时间：22:13:41" itemprop="dateCreated datePublished" datetime="2020-11-18T21:56:56+08:00">2020-11-18</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="hello-math"><a href="#hello-math" class="headerlink" title="hello math"></a>hello math</h2><p>$\xi$</p>
+<p>$$\xi+\eta \geq \pi$$</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a=<span class="number">0</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;a&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>sdfd</li>
+<li>dafa</li>
+<li>fadfa</li>
+</ul>
+<hr>
+<table>
+<thead>
+<tr>
+<th>2</th>
+<th>3</th>
+<th>3</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td>3</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/11/17/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="瓜江君">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GJJ'blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/11/17/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-11-17 23:49:47" itemprop="dateCreated datePublished" datetime="2020-11-17T23:49:47+08:00">2020-11-17</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">瓜江君</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/guajiangjun" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;guajiangjun" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">瓜江君</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+</body>
+</html>
